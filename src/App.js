@@ -3,14 +3,12 @@ import {Navbar} from './components/Navbar';
 import './styles/styles.scss';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
-import { AiFillAlert, AiFillCarryOut } from "react-icons/ai";
-import Button from './components/Button';
 
 function App() {
       return (
             <div className="App">
                   <Navbar /> 
-                  <div><img src="http://coder.comnic.com.ar/img/top-index.jpg" alt="top-index" class="top"/></div>
+                  <div><img src="http://coder.comnic.com.ar/img/top-index.jpg" alt="top-index" className='top'/></div>
                   <main className="content"> 
                   <AppContainer />
                   </main>

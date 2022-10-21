@@ -2,7 +2,7 @@ import { FaCartPlus } from 'react-icons/fa';
 
 // create our App
 const Icono = () => (
-    <FaCartPlus />
+    <div id='cart'><FaCartPlus /></div>
 );
 
 export default Icono
