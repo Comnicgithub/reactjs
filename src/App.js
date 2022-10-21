@@ -10,6 +10,7 @@ function App() {
       return (
             <div className="App">
                   <Navbar /> 
+                  <div><img src="http://coder.comnic.com.ar/img/top-index.jpg" alt="top-index" class="top"/></div>
                   <main className="content"> 
                   <AppContainer />
                   </main>
