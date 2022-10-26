@@ -151,6 +151,7 @@ button {
     font-size: 18px;
     padding: 10px 20px;
     position: relative;
+    transition-duration: 0.5s;
     cursor: pointer;
     &::after,
     &::before {
@@ -176,6 +177,8 @@ button {
     }
     &:hover{
       color: #eceff1;
+      scale: 110%;
+      transition-duration: 0.5s;
     }
   }
 }
@@ -276,7 +279,8 @@ a {
   }
 a:hover {
       color: #F4980A;
-      transition-duration: 0.2s;
+      scale: 120%;
+      transition-duration: 0.3s;
   }
 
 .top {
@@ -299,5 +303,9 @@ a:hover {
   &__item {
     font-size: 14px;
     color: white;
+    &:hover{
+      scale: 110%;
+      transition-duration: 0.2s;
+    }
   }
 }
