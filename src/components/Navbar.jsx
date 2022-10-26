@@ -1,4 +1,4 @@
-import Icono from "./Cartwidget"
+import CartWidjet from "./CartWidget"
 
 export const Navbar = () => {
     return <header className="header">
@@ -12,6 +12,6 @@ export const Navbar = () => {
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
-        <Icono/>
+        <CartWidjet/>
     </header>
 }

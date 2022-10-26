@@ -1,8 +1,8 @@
 import { FaCartPlus } from 'react-icons/fa';
 
 // create our App
-const Icono = () => (
+const CartWidjet = () => (
     <div id='cart'><FaCartPlus /></div>
 );
 
-export default Icono
+export default CartWidjet
