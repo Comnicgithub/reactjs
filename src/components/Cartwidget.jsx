@@ -2,7 +2,7 @@ import { FaCartPlus } from 'react-icons/fa';
 
 // create our App
 const CartWidjet = () => (
-    <div id='cart'><FaCartPlus /></div>
+    <div><FaCartPlus className='carrito' /></div>
 );
 
 export default CartWidjet
