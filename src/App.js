@@ -1,21 +1,26 @@
-import ItemListContainer from './components/ItemListConainer';
-import {Navbar} from './components/Navbar';
-import './styles/styles.scss';
-import Banner from './components/Banner';
-import Footer from './components/Footer';
+import "./styles/styles.scss";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Category } from "./pages/Category";
+import { Detail } from "./pages/Detail";
+import { UserLayout } from "./components/UserLayout";
 
 function App() {
-      return (
-            <div className="App">
-                  <Navbar /> 
-                  <div><img src="http://coder.comnic.com.ar/img/top-index.jpg" alt="top-index" className='top'/></div>
-                  <main className="content"> 
-                  < ItemListContainer />
-                  </main>
-                  <Banner promocion="ÚNETE AL CLUB Y CONSIGUE UN 35% DE DESCUENTO" boton="unete" onClick={() => console.log("click en unete")}/>
-                  <Footer />
-            </div>
-      );
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<UserLayout />}>
+            <Route index element={<Home />} />
+            <Route path={"/category/:categoryId"} element={<Category />} />
+            <Route path={"/product/:productId"} element={<Detail />} />
+            <Route path="/cart" element={<div>Cart</div>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

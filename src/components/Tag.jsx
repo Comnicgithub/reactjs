@@ -1,5 +1,0 @@
-const Tag = (props) => {
-    return <><p>Lentes de sol</p><span className="card__tag">{props.titulo}</span></>
-}
-
-export default Tag;
